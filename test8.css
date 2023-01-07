@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    background: rgb(232, 142, 237, 60%);
+    background-image: url('https://images.unsplash.com/photo-1560015534-cee980ba7e13?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NTJ8fGJhY2tncm91bmR8ZW58MHx8MHx8&auto=format');
+    background-size: cover;
+    font-family: 'Bungee', cursive;
+    font-size: xx-large;
+    font-weight: 100;
+    text-align: center;
+}
+
+#title {
+    position: sticky;
+    background: rgb(34, 193, 195);
+    background: linear-gradient(256deg, rgba(34, 193, 195, 1) 0%, rgba(253, 187, 45, 1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/*            Score             */
+.score{
+    display: flex;
+    justify-content: space-around;
+}
+
+/*            Cards             */
+.signs {
+    display: flex;
+    justify-content: space-between;
+    margin: 3% 10%;
+    width: 80%;
+    height: 5em;
+}
+
+.cards {
+    width: 10rem;
+    height: 5em;
+    border-radius: 2%;
+}
+
+.rock {
+    background-image: url('https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/apple/325/rock_1faa8.png');
+    background-size: cover;
+}
+
+.scissor {
+    background-image: url('https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/lg/307/scissors_2702-fe0f.png');
+    background-size: cover;
+}
+
+.paper {
+    background-image: url('https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/htc/37/page-with-curl_1f4c3.png');
+    background-size: cover;
+}
+
+.signs>.cards:hover {
+    zoom: 120%;
+    transform: rotate(-2deg);
+}
+
+/*             Result                */
+.display {
+    height: 10em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
