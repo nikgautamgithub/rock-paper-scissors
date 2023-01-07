@@ -1,0 +1,34 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="test8.css" />
+  </head>
+  <body>
+    <h1 id="title">Rock Paper Scissors</h1>
+
+    <div class="score">
+        <h5 class="win-score">Win: 0</h5>
+        <h5 class="draw-score">Draw: 0</h5>
+        <h5 class="loss-score">Loss: 0</h5>
+    </div>
+
+    <div class="signs">
+      <div class="rock cards" onclick="rockSelected()"></div>
+      <div class="paper cards" onclick="paperSelected()"></div>
+      <div class="scissor cards" onclick="scissorSelected()"></div>
+    </div>
+
+      <h5 class="loss result" style="display: none;">You Lose!!</h5>
+      <h5 class="win result" style="display: none;">You Win!!</h5>
+      <h5 class="draw result" style="display: none;">Draw!!</h5>
+
+    <div class="display">
+      <div class="play cards"></div>
+    </div>
+
+    <script src="test8.js"></script>
+  </body>
+</html>
