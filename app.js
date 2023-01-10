@@ -39,18 +39,9 @@ const score = {
     'draw': 1
 }
 
-function rockSelected(){
-    hideResult();
-    let compare = random();
-    result(1,compare);
-};
-function paperSelected(){
-    hideResult();
-    let compare = random();
-    result(2,compare);
-};
-function scissorSelected(){
-    hideResult();
-    let compare = random();
-    result(3,compare);
-};
+document.querySelectorAll('.signs>.cards').forEach(sign => {
+    sign.onclick = () =>{
+        hideResult();
+        result(Number(sign.textContent),random());
+    }
+});
