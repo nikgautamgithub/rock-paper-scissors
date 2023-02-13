@@ -43,19 +43,22 @@ body {
 }
 
 .rock {
-    background-image: url('img/Rock.gif');
-    background-size: cover;
+      background-image: url('img/Rock.gif');
+      background-size: contain;
+      background-repeat: no-repeat;
 }
 
-.scissor {
-    background-image: url('img/scissors.png');
-    background-size: cover;
-}
-
-.paper {
-    background-image: url('img/paper.png');
-    background-size: cover;
-}
+    .scissor {
+      background-image: url('img/scissors.png');
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+    
+    .paper {
+      background-image: url('img/paper-png.webp');
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
 
 .signs>.cards:hover {
     zoom: 120%;
