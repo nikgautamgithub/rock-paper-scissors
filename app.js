@@ -4,8 +4,8 @@ const random = () => Math.floor(Math.random()*3) + 1;
 //URLs for result images
 const url = {
     'rock' : 'img/Rock.gif',
-    'paper' : 'img/paper.png',
-    'scissor' : 'img/scissors.png'
+    'paper': 'img/paper-png.webp',
+    'scissor': 'img/scissors.png'
 }
 
 //show result lose or win( make the result div display visible by removing display: none;)
@@ -19,7 +19,7 @@ const showResult = decision =>{
 const hideResult = () => document.querySelectorAll('.result').forEach(tag => tag.style.display = 'none');
 
 //show image of computer's choice
-const displayImage = selection => document.querySelector('.play').style = `background-image: url(${url[selection]});background-size: cover;`;
+const displayImage = selection => document.querySelector('.play').style = `background-image: url(${url[selection]});background-size: contain;background-repeat:no-repeat;`;
 
 //check the result if its a win, draw or loss and update the score
 function result(a,b){
