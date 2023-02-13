@@ -3,9 +3,9 @@ const random = () => Math.floor(Math.random()*3) + 1;
 
 //URLs for result images
 const url = {
-    'rock' : 'https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/apple/325/rock_1faa8.png',
-    'paper' : 'https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/htc/37/page-with-curl_1f4c3.png',
-    'scissor' : 'https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/lg/307/scissors_2702-fe0f.png'
+    'rock' : 'img/Rock.gif',
+    'paper' : 'img/paper.png',
+    'scissor' : 'img/scissors.png'
 }
 
 //show result lose or win( make the result div display visible by removing display: none;)
